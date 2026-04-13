@@ -816,6 +816,29 @@
     .floating-btn.mail {
       background: linear-gradient(135deg, #1e73ff, #57b2ff);
     }
+    .floating-btn {
+  position: relative; /* IMPORTANT for tooltip */
+}
+
+.floating-btn::after {
+  content: attr(aria-label);
+  position: absolute;
+  right: 70px;
+  background: linear-gradient(135deg, #0a1830, #123f84);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.floating-btn:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
 
     .muted { color: var(--muted); }
 
