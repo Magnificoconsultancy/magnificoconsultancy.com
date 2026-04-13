@@ -127,3 +127,38 @@ text-align:center;
 padding:25px;
 margin-top:60px;
 }
+.gantt-section{
+background:#f4f7fb;
+padding:60px;
+text-align:center;
+}
+
+.gantt-chart{
+display:flex;
+flex-direction:column;
+gap:15px;
+width:70%;
+margin:auto;
+}
+
+.gantt-bar{
+height:25px;
+background:#dfe7ff;
+border-radius:4px;
+position:relative;
+overflow:hidden;
+}
+
+.gantt-bar span{
+position:absolute;
+left:0;
+top:0;
+height:100%;
+background:#0c3c8c;
+animation:grow 4s forwards;
+}
+
+@keyframes grow{
+0%{width:0}
+100%{width:80%}
+}
