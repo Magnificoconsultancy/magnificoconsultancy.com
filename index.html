@@ -78,6 +78,47 @@
   height: 100px;
   width: auto;
   display: block;
+  .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(4px);
+}
+
+.brand-logo {
+  height: 92px;
+  width: auto;
+  display: block;
+  filter: none;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.brand-main {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.95);
+  text-transform: none;
+}
+
+.brand-sub {
+  margin-top: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #6ebcff;
+  text-transform: uppercase;
+}
 }
 
     .brand-mark {
@@ -948,6 +989,10 @@
     <div class="container nav-wrap">
       <a class="brand" href="#home">
   <img src="./logo.png" alt="Magnifico Consultancy Logo" class="brand-logo">
+  <div class="brand-name">
+    <span class="brand-main">Magnifico</span>
+    <span class="brand-sub">Consultancy</span>
+  </div>
 </a>
 
 
