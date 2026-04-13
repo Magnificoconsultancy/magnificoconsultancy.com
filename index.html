@@ -53,7 +53,7 @@
 }
 
     .site-header.scrolled {
-  background: rgba(10, 32, 74, 0.88);
+  background: rgba(10, 32, 74, 0.95);
   box-shadow: 0 10px 24px rgba(0,0,0,.14);
 }
     .nav-wrap {
@@ -75,9 +75,10 @@
 }
 
 .brand-logo {
-  height: 120px;
+  height: 100px;
   width: auto;
   display: block;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
 }
 
     .brand-mark {
@@ -907,6 +908,19 @@
       .footer-social { justify-self: start; justify-content: flex-start; }
       .floating-contact { right: 16px; bottom: 16px; }
     }
+    .brand {
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.brand-logo {
+  height: 100px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
+}
   </style>
 </head>
 <body>
@@ -915,6 +929,7 @@
       <a class="brand" href="#home">
   <img src="./logo.png" alt="Magnifico Consultancy Logo" class="brand-logo">
 </a>
+
 
       <button class="menu-btn" id="menuBtn" type="button">Menu</button>
 
