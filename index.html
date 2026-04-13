@@ -70,6 +70,11 @@
       align-items: center;
       gap: 14px;
       min-width: 0;
+      .brand-logo {
+  height: 72px;
+  width: auto;
+  display: block;
+}
     }
 
     .brand-mark {
@@ -224,11 +229,11 @@
     }
 
     .hero-copy h1 {
-      font-size: clamp(2.7rem, 5vw, 5.4rem);
-      line-height: .95;
-      margin: 0 0 18px;
-      letter-spacing: -.03em;
-    }
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  margin: 0 0 18px;
+  letter-spacing: -.02em;
+}
 
     .hero-copy h1 span {
       color: #96c7ff;
@@ -899,12 +904,8 @@
   <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
       <a class="brand" href="#home">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div class="brand-text">
-          <strong>Magnifico</strong>
-          <span>Consultancy</span>
-        </div>
-      </a>
+  <img src="logo.png" alt="Magnifico Consultancy Logo" class="brand-logo">
+</a>
 
       <button class="menu-btn" id="menuBtn" type="button">Menu</button>
 
@@ -928,7 +929,7 @@
 
       <div class="container hero-inner">
         <div class="hero-copy">
-          <div class="eyebrow">MENA Region and Indian Based Engineering & Project Management Consultancy</div>
+          <div class="eyebrow">Engineering and Project Management Consultancy Serving MENA and India</div>
           <h1>Strategic Planning for <span>Construction Excellence</span></h1>
           <p>
             Magnifico Consultancy delivers professional project planning, project controls, construction management, delay analysis, and engineering advisory services for civil, mechanical, electrical, fit-out, industrial, and infrastructure projects. We help clients move from uncertainty to clarity through disciplined planning, measurable performance, and practical execution support.
