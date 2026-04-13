@@ -1,17 +1,17 @@
 body{
-font-family: Arial, Helvetica, sans-serif;
 margin:0;
-background:#f4f6fb;
+font-family: 'Segoe UI',sans-serif;
+background:#f4f7fb;
 color:#333;
 }
 
 header{
-background:#0a3d91;
-color:white;
-padding:20px 10%;
+background:#0c3c8c;
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+color:white;
 }
 
 header h1{
@@ -21,62 +21,109 @@ font-size:24px;
 
 nav a{
 color:white;
-margin-left:20px;
 text-decoration:none;
+margin-left:25px;
 font-weight:500;
 }
 
 nav a:hover{
-text-decoration:underline;
+opacity:0.8;
 }
 
 .hero{
-background:linear-gradient(rgba(10,61,145,0.85),rgba(10,61,145,0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+background:linear-gradient(rgba(12,60,140,0.9),rgba(12,60,140,0.9)),
+url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
 background-size:cover;
+background-position:center;
 color:white;
 text-align:center;
-padding:120px 20px;
+padding:140px 20px;
 }
 
 .hero h2{
-font-size:42px;
+font-size:46px;
 margin-bottom:10px;
 }
 
-.container{
-width:80%;
+.hero p{
+font-size:18px;
+max-width:600px;
 margin:auto;
-padding:60px 0;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:white;
+color:#0c3c8c;
+font-weight:bold;
+text-decoration:none;
+border-radius:5px;
+}
+
+.container{
+width:85%;
+margin:auto;
+padding:70px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#0c3c8c;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:6px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+border-radius:8px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
-color:#0a3d91;
+color:#0c3c8c;
 }
 
-footer{
-background:#0a3d91;
-color:white;
-text-align:center;
-padding:20px;
+.timeline{
 margin-top:40px;
 }
 
-.contact-box{
-background:white;
-padding:30px;
-border-radius:6px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+.timeline-bar{
+background:#ddd;
+height:10px;
+border-radius:5px;
+overflow:hidden;
+}
+
+.timeline-progress{
+height:10px;
+width:0%;
+background:#0c3c8c;
+animation:progress 4s forwards;
+}
+
+@keyframes progress{
+0%{width:0}
+100%{width:85%}
+}
+
+footer{
+background:#0c3c8c;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
 }
