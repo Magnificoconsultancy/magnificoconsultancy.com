@@ -1307,3 +1307,22 @@
   </script>
 </body>
 </html>
+.floating-btn::after {
+  content: attr(aria-label);
+  position: absolute;
+  right: 70px;
+  background: #0a1830;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.floating-btn:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
