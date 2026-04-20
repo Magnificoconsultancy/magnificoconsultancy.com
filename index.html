@@ -781,6 +781,19 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+    .contact-card li a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-card li a:hover,
+.contact-card li a:focus-visible {
+  text-decoration: underline;
+}
+
+.contact-card > p {
+  margin-bottom: 18px;
+}
 
     .site-footer {
       position: relative;
@@ -1168,31 +1181,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
 }
-    .contact-info p {
-  margin: 6px 0;
-  font-size: 0.95rem;
-  color: #cbd5e1;
-}
-
-.contact-info a {
-  color: #60a5fa;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-    .header-phone {
-  margin-left: 20px;
-  font-size: 0.9rem;
-  color: #93c5fd;
-  text-decoration: none;
-}
-
-.header-phone:hover {
-  color: #ffffff;
-}
-  </style>
+     </style>
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to content</a>
@@ -1227,9 +1216,7 @@ h1, h2, h3, h4, h5, h6 {
         <a href="#contact">Contact</a>
       </nav>
     </div>
-    <a href="tel:+971541616796" class="header-phone">
-  +971 54 161 6796
-</a>
+    
   </header>
 
   <main id="mainContent">
@@ -1589,27 +1576,31 @@ h1, h2, h3, h4, h5, h6 {
 
         <div class="contact-grid">
           <div class="contact-card">
-            <h3>Contact Information</h3>
-            <p>
-  Reach out for project planning, controls support, and consultancy enquiries.
-</p>
-            <p><strong>Phone:</strong> <a href="tel:+971541616796">+971 54 161 6796</a></p>
-            <ul>
-              <li>
-                <strong>Email</strong>
-                <a href="mailto:info@magnificoconsultancy.com">info@magnificoconsultancy.com</a>
-              </li>
-              <li>
-                <strong>Location</strong>
-                Abu Dhabi, United Arab Emirates
-              </li>
-              <li>
-                <strong>Website</strong>
-                <a href="https://www.magnificoconsultancy.com">www.magnificoconsultancy.com</a>
-              </li>
-            </ul>
-          </div>
-
+  <h3>Contact Information</h3>
+  <p>
+    Reach out for project planning, controls support, and consultancy enquiries.
+  </p>
+  <ul>
+    <li>
+      <strong>Phone</strong>
+      <a href="tel:+971541616796">+971 54 161 6796</a>
+    </li>
+    <li>
+      <strong>Email</strong>
+      <a href="mailto:info@magnificoconsultancy.com">info@magnificoconsultancy.com</a>
+    </li>
+    <li>
+      <strong>Location</strong>
+      Abu Dhabi, United Arab Emirates
+    </li>
+    <li>
+      <strong>Website</strong>
+      <a href="https://www.magnificoconsultancy.com" target="_blank" rel="noopener">
+        www.magnificoconsultancy.com
+      </a>
+    </li>
+  </ul>
+</div>
           <div class="contact-card">
             <h3>Quick Enquiry</h3>
             <form class="contact-form" action="https://formspree.io/f/xnjlakew" method="POST">
